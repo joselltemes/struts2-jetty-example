@@ -34,7 +34,7 @@ public class InvoiceAction extends ActionSupport  {
         try {
             Date dateWithoutTime = sdf.parse(sdf.format(new Date()));
             if (invoiceBean.getSubject().isEmpty()) {
-                addFieldError("invoiceBean.subject", "El concepto es obligatorio.");
+                addFieldError( "invoiceBean.subject", "El concepto es obligatorio.");
             }
             else if(invoiceBean.getBruto()<=0){
                 addFieldError("invoiceBean.bruto", "El importe no es valido.");
