@@ -12,6 +12,6 @@
 <body>
 
     <h1>Resumen de factura: </h1>
-
+    <s:property value="invoiceBean" escapeHtml="false"/>
 </body>
 </html>
